@@ -1,0 +1,23 @@
+<!-- app/templates/app/zoologico_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Zoológicos</title>
+</head>
+<body>
+    <h1>Lista de Zoológicos</h1>
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Ubicación</th>
+        </tr>
+        {% for zoologico in zoologicos %}
+        <tr>
+            <td>{{ zoologico.nombre }}</td>
+            <td>{{ zoologico.ubicacion }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
